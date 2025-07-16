@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		61C3D2172E27E02E007B904B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 61C3D2162E27E02E007B904B /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		61D592ED2E1FEE760082D0D1 /* crypto-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C3D2172E27E02E007B904B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "crypto-tracker";
 			packageProductDependencies = (
+				61C3D2162E27E02E007B904B /* Kingfisher */,
 			);
 			productName = "crypto-tracker";
 			productReference = 61D592ED2E1FEE760082D0D1 /* crypto-tracker.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 61D592E42E1FEE760082D0D1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				61C3D2152E27E02E007B904B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 61D592EE2E1FEE760082D0D1 /* Products */;
 			projectDirPath = "";
@@ -326,6 +335,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61C3D2152E27E02E007B904B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61C3D2162E27E02E007B904B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61C3D2152E27E02E007B904B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61D592E52E1FEE760082D0D1 /* Project object */;
 }

@@ -13,6 +13,8 @@ class MockData {
     
     private init() {}
     
+    let stat = StatModel(title: "Market Cap", value: "$1.2T", percentageChange: 0.05)
+    
     let coin = CoinModel(
         id: "bitcoin",
         symbol: "btc",

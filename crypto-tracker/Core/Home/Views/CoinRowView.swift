@@ -18,8 +18,14 @@ struct CoinRowView: View {
                 .foregroundColor(Color.theme.secondaryText)
                 .frame(minWidth: 30)
             
-            Circle()
-                .frame(width: 30, height: 30)
+            AsyncImage(url: URL(string: coin.image)) { image in
+                image.resizable()
+            } placeholder: {
+                Color.theme.secondaryText
+            }
+            
+            .frame(width: 30, height: 30)
+            .clipShape(Circle())
             
             Text(coin.symbol.uppercased())
                 .font(.headline)
