@@ -13,8 +13,12 @@ struct CachedImage: View {
     
     var body: some View {
         KFImage(URL(string: url))
+            .placeholder {
+                ProgressView()
+            }
             .resizable()
             .aspectRatio(contentMode: .fit)
+        
     }
 }
 

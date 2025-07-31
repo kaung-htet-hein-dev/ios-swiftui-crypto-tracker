@@ -85,7 +85,7 @@ extension HomeView {
     
     private var allCoinList: some View {
         List {
-            ForEach(homeViewModel.allCoins) { coin in
+            ForEach(isPreview ? MockData.shared.coinList : homeViewModel.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingColumn: showPortfolio)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             }
@@ -96,7 +96,7 @@ extension HomeView {
     
     private var profolioCoinList: some View {
         List {
-            ForEach(homeViewModel.allCoins) { coin in
+            ForEach(isPreview ? MockData.shared.coinList : homeViewModel.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingColumn: showPortfolio)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             }

@@ -215,4 +215,7 @@ class MockData {
         priceChangePercentage24HInCurrency: 3952.64,
         currentHoldings: 1.5)
     
+    let coinList: [CoinModel] = loadJSON("Data")
 }
+
+let isPreview = ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
